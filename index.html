@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page</title>
+  <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+  
+
+</head>
+
+<body>
+  <section class="py-5">
+    <div class="container">
+        <h1 class="my-3"> Product</h1>
+        <label for="productName">Product Name</label>
+        <input type="text" name="" class="form-control" id="productName">
+
+        <label for="productPrice">Product Price</label>
+        <input type="text" class="form-control" id="productPrice">
+
+
+        <label for="productCateg">Product Categ</label>
+        <input type="text" class="form-control" id="productCateg">
+
+        <label for="productDesc">Product Desc</label>
+        <input type="text" class="form-control" id="productDesc">
+
+        
+        <label for="productCount">Product Count</label>
+        <input type="number" class="form-control w-25" id="productCount">
+
+
+      <input type="text" name="" id="search" 
+            placeholder="search" onkeyup="searchProduct(this.value)" class="form-control w-50 m-auto my-3">
+
+        <button class="btn btn-info mt-3" onclick="addproduct()">Add Product</button>
+        <button class="btn btn-danger mt-3" onclick="deleteAll()">Delete All</button>
+
+
+
+        <table class="table mt-5 text-center table-bordered">
+            <thead class="table-dark">
+              <th>ID</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Categ</th>
+                <th>Product Desc</th>
+                <th>Count</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody id="tBody">
+               <!--   -->
+            </tbody>
+        </table>
+    </div>
+    </section>
+  <script src='js/main.js'></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
